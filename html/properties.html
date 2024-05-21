@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Style.css">
+    <title>properties</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>شركة الإستثمار العقاري</h1>
+    </div>
+
+    <div class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="properties.html">Properties</a>
+    </div>
+
+    <div id="content">
+      <table id="propertiesTable">
+        <tr>
+          <th>المدينة</th>
+          <th>التفاصيل</th>
+          <th>الإيجار الشهري</th>
+          <th>العمليات</th>
+        </tr>
+
+        <tr>
+          <td>دمشق</td>
+          <td>
+            <button onclick="toggleDetails('property1')">عرض التفاصيل</button>
+          </td>
+          <td>700$</td>
+          <td>
+            <label for="option1"></label>
+            <input type="radio" id="option1" name="options" value="option1">
+          </td>
+        </tr>
+        <tr id="property1" style="display: none">
+          <td colspan="4">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    class="image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvuw8sSNgcDkujamDJTHk_NjeTZs07ndAdB10Hz79pN-CyDFQfCyMMEaffCUbJGH9bLwA&usqp=CAU"
+                    alt=""
+                  />
+                </td>
+                <td>
+                  <img
+                    class="image"
+                    src="https://cdn.damazzle.com/RbMnH3X1CQ-VDYvMp_dBi_e0iic=/https%3A%2F%2Fdamazzle.com%2Fwp-content%2Fuploads%2F2022%2F02%2FWhatsApp-Image-2022-02-13-at-8.10.37-AM-3.jpeg"
+                    alt=""
+                  />
+                </td>
+                <td>الطابق الرابع</td>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 10 متر</td>
+                <td>مفروش</td>
+                <td>المساحة: 150 متر مربع</td>
+                <td>شقة 3غرف وصالة</td>
+                <td>المنطقة: كفر سوسة</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <td>الرقة</td>
+        <td>
+          <button onclick="toggleDetails('property9')">عرض التفاصيل</button>
+        </td>
+        <td>400$</td>
+        <td>
+          <label for="option1"></label>
+          <input type="radio" id="option1" name="options" value="option1">
+        </td>
+      
+      </tr>
+      <tr id="property9" style="display: none">
+        <td colspan="4">
+          <table>
+            <tr>
+              <td>
+                <img
+                  class="image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnYKw9vjXgZNfLjeZpGIO6bdhYupNZwZ79q-wAHHVrVzZSDGSeJ6HAHdv3DcgFCdYqns&usqp=CAU"
+                  alt=""
+                />
+              </td>
+              <td>
+                <img
+                  class="image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSYEna7JbibJKxpReMfVeNJE3Z_dQS1XrPlg&s"
+                  alt=""
+                />
+              </td>
+              <td>الطابق  الخامس</td>
+              <td>للبيع</td>
+              
+              <td> مفروش</td>
+              <td>بلكون مساحة 10 م</td>
+              <td>المساحة:80 متر مربع</td>
+              <td>شقة 2غرف وصالة</td>
+              <td>المنطقة:المنطقة الوسطى</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <td>طرطوس</td>
+      <td>
+        <button onclick="toggleDetails('property12')">عرض التفاصيل</button>
+      </td>
+      <td>800$</td>
+      <td>
+        <label for="option1"></label>
+        <input type="radio" id="option1" name="options" value="option1">
+      </td>
+    
+    </tr>
+    <tr id="property12" style="display: none">
+      <td colspan="4">
+        <table>
+          <tr>
+            <td>
+              <img
+                class="image"
+                src="data:image/jpeg;base64,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"
+                alt=""
+              />
+            </td>
+            <td>
+              <img
+                class="image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlzTphCalKKHAjcDeDR6lR7B-izFewkgfod5fFMYeWYdgkG_h06VmcwHKfbNZHDJZ8EKI&usqp=CAU"
+                alt=""
+              />
+            </td>
+            <td>الطابق  السابع</td>
+            <td>للبيع</td>
+            <td> مفروش</td>
+            <td>المساحة100 متر مربع</td>
+            <td>شقة 3غرف وصالون</td>
+            <td>المنطقة:البطار</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <td>دير الزور</td>
+    <td>
+      <button onclick="toggleDetails('property13')">عرض التفاصيل</button>
+    </td>
+    <td>500$</td>
+    <td>
+      <label for="option1"></label>
+      <input type="radio" id="option1" name="options" value="option1">
+    </td>
+  
+  </tr>
+  <tr id="property13" style="display: none">
+    <td colspan="4">
+      <table>
+        <tr>
+          <td>
+            <img
+              class="image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Oi0xawpnoFfiUs6HfNjp1KNF3yU5AGiljlg2u9A4y7IP29YQJgiXecCPQ1gFG3jaL9Y&usqp=CAU"
+              alt=""
+            />
+          </td>
+          <td>
+            <img
+              class="image"
+              src="https://i0.wp.com/syikarat.com/wp-content/uploads/2022/12/%D8%B4%D9%82%D9%82-%D9%84%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1-%D9%81%D9%8A-%D8%AF%D8%B4%D9%82.png?resize=499%2C410&ssl=1"
+              alt=""
+            />
+          </td>
+          <td>الطابق  الرابع</td>
+          <td>للبيع</td>
+          <td>بلكون مساحة 15متر</td>
+          <td> مفروش</td>
+          <td>المساحة:90متر مربع</td>
+          <td>شقة 1غرفة وصالون</td>
+          <td>المنطقة:الجاسمي</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+
+        <tr>
+          <td>حلب</td>
+          <td>
+            <button onclick="toggleDetails('property10')">عرض التفاصيل</button>
+          </td>
+          <td>450$</td>
+          <td>
+            <label for="option1"></label>
+            <input type="radio" id="option1" name="options" value="option1">
+          </td>
+        </tr>
+        <tr id="property10" style="display: none">
+          <td colspan="4">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    class="image"
+                    src="https://syikarat.com/wp-content/uploads/2022/12/%D8%A8%D9%8A%D8%AA-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-%D9%81%D9%8A-%D8%AD%D9%84%D8%A8-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.png"
+                    alt=""
+                  />
+                </td>
+                <td>
+                  <img
+                    class="image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFE_SHHg449Iy5f4aRWVDA-uq_YiAeMFhFfqTpLHo6xH070bOs4oVIna04qJpYbfPwviE&usqp=CAU"
+                    alt=""
+                  />
+                </td>
+                <td>الطابق الاول</td>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 15 متر</td>
+                <td>غير مفروش</td>
+                <td>المساحة: 100 متر مربع</td>
+                <td>شقة 2غرف وصالة</td>
+                <td>المنطقة: الجديدة</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>حماه</td>
+          <td>
+            <button onclick="toggleDetails('property2')">عرض التفاصيل</button>
+          </td>
+          <td>300$</td>
+          <td>
+            <label for="option1"></label>
+            <input type="radio" id="option1" name="options" value="option1">
+          </td>
+        </tr>
+        <tr id="property2" style="display: none">
+          <td colspan="4">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    class="image"
+                    src="data:image/jpeg;base64,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"
+                    alt=""
+                  />
+                </td>
+                <td>
+                  <img
+                    class="image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHsEbakLA7DtaIyDNcnb5Lqn6jvBv6-urkHTR30Ii59s5GsGmBn5z7ogfrSx-1sCgV3iE&usqp=CAU"
+                    alt=""
+                  />
+                </td>
+                <td>الطابق الاول</td>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 5 متر</td>
+                <td>مفروش</td>
+                <td>المساحة: 80 متر مربع</td>
+                <td>شقة 2غرف وصالة</td>
+                <td>المنطقة:</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>اللاذقية</td>
+          <td>
+            <button onclick="toggleDetails('property3')">عرض التفاصيل</button>
+          </td>
+          <td>200$</td>
+          <td>
+            <label for="option1"></label>
+            <input type="radio" id="option1" name="options" value="option1">
+          </td>
+        </tr>
+        <tr id="property3" style="display: none">
+          <td colspan="4">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    class="image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF3toeBTKLjhX2nNc1OL1LMXWq6lCLDuppBr0ASh4Yo9YlSsltVFsukw_EUvwgGrBsYpY&usqp=CAU"
+                    alt=""
+                  />
+                </td>
+                <td>
+                  <img
+                    class="image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlu662RckBco-Q5NRJA3UbUclv_xh3yT8RcgmyPiLUcm0haFOi-tRt7DfFuM85HfSIUfE&usqp=CAU"
+                    alt=""
+                  />
+                </td>
+                <td>الطابق الخامس</td>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 10 متر</td>
+                <td>مفروش</td>
+                <td>المساحة: 100 متر مربع</td>
+                <td>شقة 2غرف وصالة</td>
+                <td>المنطقة:الكورنيش الجنوبي</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>السويداء</td>
+          <td>
+            <button onclick="toggleDetails('property4')">عرض التفاصيل</button>
+          </td>
+          <td>300$</td>
+          <td>
+            <label for="option1"></label>
+            <input type="radio" id="option1" name="options" value="option1">
+          </td>
+        </tr>
+        <tr id="property4" style="display: none">
+          <td colspan="4">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    class="image"
+                    src="https://e3lani.multitiers.com/uploads/images/Xlarge/c3/19/c0/c319c0fb08dc796c86a659939cbe6b7d.jpeg"
+                    alt=""
+                  />
+                </td>
+                <td>
+                  <img
+                    class="image"
+                    src="https://e3lani.multitiers.com/uploads/images/Xlarge/79/54/4f/79544f38973040774138093b093aa218.jpeg"
+                    alt=""
+                  />
+                </td>
+                <td>الطابق الرابع</td>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 10 متر</td>
+                <td>مفروشة</td>
+                <td>المساحة: 150 متر مربع</td>
+                <td>شقة 3غرف وصالة</td>
+                <td>المنطقة:على طريق الكوم</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>الحسكة</td>
+          <td>
+            <button onclick="toggleDetails('property5')">عرض التفاصيل</button>
+          </td>
+          <td>200$</td>
+          <td>
+            <label for="option1"></label>
+            <input type="radio" id="option1" name="options" value="option1">
+          </td>
+        </tr>
+        <tr id="property5" style="display: none">
+          <td colspan="4">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    class="image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuNKYXrQ2X6vpJkHkaheZRrjeTgrzrsf1cUa-vV_fBoQ&s"
+                    alt=""
+                  />
+                </td>
+                <td>
+                  <img
+                    class="image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRemNQ3i1RYMmESLNJtrzIbF6OQNR4Wm6a0PNFaUAZ71ZaKLYBDzswy8mBs1NEbmJACwec&usqp=CAU"
+                    alt=""
+                  />
+                </td>
+                <td>الطابق الاول</td>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 10 متر</td>
+                <td>مفروشة</td>
+                <td>المساحة: 80 متر مربع</td>
+                <td>شقة 2غرف وصالة</td>
+                <td>المنطقة:القامشلي</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>ريف دمشق</td>
+          <td>
+            <button onclick="toggleDetails('property6')">عرض التفاصيل</button>
+          </td>
+          <td>300$</td>
+          <td>
+            <label for="option1"></label>
+            <input type="radio" id="option1" name="options" value="option1">
+          </td>
+        
+        </tr>
+        <tr id="property6" style="display: none">
+          <td colspan="4">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    class="image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0AT73Mu9A2JfR8xJ0PdfeKWZzh_pWq5DoQXQYdS3AcDMbBtH41hqCOIoTvpEn2zPnoYo&usqp=CAU"
+                    alt=""
+                  />
+                </td>
+                <td>
+                  <img
+                    class="image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgylKVXtLp5n5s-vTkobgMf4dvAhAVD_gFloLooXDykq_zE5FnNj_yeXfwMQMco7iBRmk&usqp=CAU"
+                    alt=""
+                  />
+                </td>
+                <td>الطابق السادس</td>
+                <td>الملكية: طابو</td>
+                <td>بلكون مساحة 20 متر</td>
+                <td>غير مفروش</td>
+                <td>المساحة: 150 متر مربع</td>
+                <td>شقة 2غرف وصالة</td>
+                <td>المنطقة:جرمانا</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+       
+      </table>
+      <td><button onclick="showForm('property6')">متابعة</button></td>
+        <div id="formContainer" style="display: none">
+          <h3 class="Form">نموذج الطلب</h3>
+          <form id="userForm" onsubmit="return validateForm()">
+            <label for="name">الاسم الكامل:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="أحرف هجائية فقط باللغة العربية"
+            />
+            <label for="nationalId">الرقم الوطني:</label>
+            <input
+              type="text"
+              id="nationalId"
+              name="nationalId"
+              placeholder="11 خانة - الخانتين إلى اليسار ترمزان إلى المحافظة"
+              required
+            />
+            <label for="date">تاريخ الولادة:</label>
+            <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" />
+            <label for="phone">رقم الموبايل:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="يطابق أرقام شبكتي Syriatel و MTN"
+            />
+            <label for="email">الإيميل:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@example.com"
+            />
+            <label for="captcha">ادخل الرمز:</label>
+            <input type="text" id="captcha" name="captcha" required />
+            <img src="captcha.jpg" alt="رمز captcha" id="captcha-image" />
+            <button type="submit" id="buy">ارسال 
+              
+            </button>
+          </form>
+        </div>
+      
+    </div>
+
+    <script src="../myFunctions.js"></script>
+  </body>
+</html>
